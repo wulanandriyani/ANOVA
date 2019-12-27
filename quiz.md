@@ -15,29 +15,29 @@ Berdasarkan output yang diperoleh di atas, data masa pakai ban mobil terdiri dar
 - `Miliage`: Masa pakai ban mobil dalam mileage run in ’000 miles.
 
 1. Berdasarkan eksplorasi di atas, apa respon (y) yang diukur?
-  - [v] masa pakai ban mobil
+  - [ ] masa pakai ban mobil
   - [ ] ukuran ban mobil
   - [ ] merek ban mobil
   - [ ] harga ban mobil
 2. Apa prediktor/perlakuan (x) yang diterapkan?
   - [ ] masa pakai ban mobil
   - [ ] ukuran ban mobil
-  - [v] merek ban mobil
+  - [ ] merek ban mobil
   - [ ] harga ban mobil
 3. Sebutkan kategori pada prediktor/perlakuan (x) yang diterapkan?
   - [ ] Apollo, Bridgestone, CEAT and Dunlop
   - [ ] Achilles, Bridgestone, CEAT and Falken
   - [ ] Apollo, Bridgestone, Corsa and Falken
-  - [v] Apollo, Bridgestone, CEAT and Falken
+  - [ ] Apollo, Bridgestone, CEAT and Falken
 4. Tentukan null hypothesis (H0) untuk permasalahan di atas?
   - [ ] merek ban mobil berpengaruh terhadap masa pakai ban mobil
-  - [v] semua merek ban mobil memiliki masa pakai yang sama
+  - [ ] semua merek ban mobil memiliki masa pakai yang sama
   - [ ] terdapat minimal 1 merek ban mobil yang memiliki masa pakai yang berbeda
   - [ ] terdapat perbedaan yang signifikan antara berbagai merek ban mobil yang diterapkan terhadap masa pakai ban mobil
 5. Tentukan alternative hypothesis (H1) untuk permasalahan di atas?
   - [ ] merek ban mobil tidak berpengaruh terhadap masa pakai ban mobil
   - [ ] semua merek ban mobil memiliki masa pakai yang sama
-  - [v] terdapat minimal 1 merek ban mobil yang memiliki masa pakai yang berbeda
+  - [ ] terdapat minimal 1 merek ban mobil yang memiliki masa pakai yang berbeda
   - [ ] terdapat minimal 2 merek ban mobil yang memiliki masa pakai yang berbeda
 
 # 2 Compute One-Way ANOVA
@@ -48,7 +48,7 @@ Sebagai seorang bisnis manajer, anda memiliki tanggung jawab untuk menguji dan m
 # your code here
 ```
 6. Berdasarkan hasil one-way ANOVA di atas, apa yang dapat disimpulkan oleh bisnis manajer?
-  - [v] terdapat minimal 1 merek ban mobil yang memiliki masa pakai yang berbeda
+  - [ ] terdapat minimal 1 merek ban mobil yang memiliki masa pakai yang berbeda
   - [ ] terdapat minimal 2 merek ban mobil yang memiliki masa pakai yang berbeda
   - [ ] merek ban mobil tidak berpengaruh terhadap masa pakai ban mobil
   - [ ] semua merek ban mobil memiliki masa pakai yang sama
@@ -64,20 +64,20 @@ Pada one-way ANOVA manajer bisnis hanya mengetahui bahwa setiap merek ban mobil 
   - [ ] Apollo
   - [ ] Bridgestone
   - [ ] CEAT
-  - [v] Falken
+  - [ ] Falken
 
 # 3 Anova Assumptions
 
 8. Supaya keputusan yang diperoleh di atas tidak bias dan presisi. Hasil one-way ANOVA harus memenuhi asumsi?
   - [ ] homogeneity of Variance dan non - autocorrelation
-  - [v] homogeneity of variance dan normality residuals
+  - [ ] homogeneity of variance dan normality residuals
   - [ ] normality residuals dan non - multicolinearity
   - [ ] normality residuals dan white noise
 
 Anda bisa melakukan pengecekkan kedua asumsi tersebut dengan fungsi `leveneTest()` dari package `car` dan fungsi `shapiro.test()`.
 
 9. Pelanggaran asumsi apa yang terjadi?
-  - [v] tidak ada
+  - [ ] tidak ada
   - [ ] homogeneity of variance
   - [ ] normality residuals
   - [ ] keduanya
