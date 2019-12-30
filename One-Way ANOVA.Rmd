@@ -79,7 +79,7 @@ Seorang peneliti agronomi melakukan percobaan pada tanaman jagung varietas Arjun
 
 **Latihan:**
 
-Karantina tumbuhan ingin mengetahui pengaruh Fumigan *Methyl Bromide* (CH3Br) terhadap daya tumbuh benih kacang hijau, dilakukan percobaan sebagai berikut:   Benih kacang hijau diberi fumigan dengan dosis 16 gr/m3, 32 gr/m3 , 48 gr/m3, 64 gr/m3 dan kontrol (tanpa fumigan) yang masing-masing diulang sebanyak 8 kali.  Fumigasi dilakukan selama 2 jam. Benih kacang hijau yang sudah difumigasi dikecambahkan denganmetode kertas hisap (blotter test).
+Karantina tumbuhan ingin mengetahui pengaruh Fumigan *Methyl Bromide* (CH3Br) terhadap daya tumbuh benih kacang hijau, dilakukan percobaan sebagai berikut: Benih kacang hijau diberi fumigan dengan dosis 16 gr/m3, 32 gr/m3 , 48 gr/m3, 64 gr/m3 dan kontrol (tanpa fumigan) yang masing-masing diulang sebanyak 8 kali.  Fumigasi dilakukan selama 2 jam. Benih kacang hijau yang sudah difumigasi dikecambahkan denganmetode kertas hisap (blotter test).
 
 1. Apa **respon** (y) yang diukur ?
 
@@ -137,6 +137,8 @@ ggplot(data = benih, aes(x = dosis, y = daya_tumbuh)) +
   theme_minimal()
 ```
 
+Berdasarkan hasil summary statistics dan visualisasi sebaran daya tumbuh benih kacang hijau dari setiap dosis fumigasi di atas, diketahui bahwa perbedaan pemberian dosis fumigasi menyebabkan perbedaan daya tumbuh benih kacang hijau. Pemberian dosis Fumigan *Methyl Bromide* (CH3Br) 0 gr/m3 (kontrol) dan 16 gr/m3 menyebabkan daya tumbuh benih kacang hijau yang serupa, yaitu 100. Namun, pemberian dosis Fumigan *Methyl Bromide* (CH3Br) dengan ukuran yang lebih besar, yaitu 32, 48, dan 64 gr/m3 justru menyebabkan penurunan daya tumbuh benih kacang hijau. Rata-rata daya tumbuh benih kacang hijau yang diberikan dosis Fumigan *Methyl Bromide* (CH3Br) 32, 48, dan 64 gr/m3, yaitu 90.25, 80, dan 85. Untuk membuktikan hipotesis tersebut berdasarkan data yang ada akan dilakuan one-way ANOVA.
+
 ## Compute One-Way ANOVA
 
 Untuk melakukan one-way ANOVA kita bisa menggunakan fungsi `aov()`.
@@ -150,8 +152,6 @@ Untuk melihat output hasil one-way ANOVA bisa dengan print objek `ANOVA_benih` a
 ```{r}
 summary(ANOVA_benih)
 ```
-
-## Interpret the Result
 
 Karena nilai p kurang dari tingkat signifikansi (alpha), yaitu 5% atau 0.05, kita dapat menyimpulkan bahwa terdapat perbedaan yang signifikan antara dosis-dosis fumigasi yang diterapkan terhadap daya tumbuh benih kacang hijau.
 
@@ -173,6 +173,8 @@ TukeyHSD(ANOVA_benih)
 Hampir semua nilai p kurang dari tingkat signifikansi (alpha), yaitu 5% atau 0.05, kecuali dosis fumigasi antara 0 gr/m3 dan 16 gr/m3 serta 64 gr/m3 dan 48 gr/m3. Kita dapat menyimpulkan bahwa daya tumbuh benih kacang hijau paling baik ketika tidak dilakukan fumigasi (kontrol).
 
 # ANOVA Assumptions
+
+Pengecekkan asumsi pada hasil one-way ANOVA dilakukan untuk meyakinkan bahwa kesimpulan yang diambil sudah presisi dan dapat digeneralkan ke populasi (dapat diterapkan secara universal). Pada kasus ini adalah menetapkan bahwa tidak melakukan fumigasi terhadap benih kacang hijau akan membuat daya tumbuh benih kacang hijau jauh lebih baik dibandingkan dengan melakukan fumigasi.
 
 ## Homogeneity of Variance
 

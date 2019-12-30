@@ -1,6 +1,6 @@
 Bagian terakhir dari materi one-way ANOVA adalah pengerjaan quiz sebagai bagian dari proses pemahaman materi tersebut. Pada quiz ini, anda akan menggunakan dataset tentang masa pakai ban mobil — data tersebut disimpan dalam format csv pada folder `data_input` dengan nama file `tyre.csv`.
 
-Untuk menyelesaikan quiz ini, anda perlu menerapkan metode one-way ANOVA untuk menguji dan membandingkan masa pakai empat merek ban dengan mengikuti langkah-langkah berikut:
+Untuk menyelesaikan quiz ini, anda perlu menerapkan metode one-way ANOVA untuk menguji dan membandingkan masa pakai empat merek ban mobil dengan mengikuti langkah-langkah berikut:
 
 # 1 Data Exploration
 
