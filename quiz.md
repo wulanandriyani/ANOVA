@@ -66,7 +66,7 @@ Pada one-way ANOVA manajer bisnis hanya mengetahui bahwa setiap merek ban mobil 
   - [ ] CEAT
   - [ ] Falken
 
-# 4 Anova Assumptions
+# 4 ANOVA Assumptions
 
 8. Supaya keputusan yang diperoleh di atas tidak bias dan presisi. Hasil one-way ANOVA harus memenuhi asumsi?
   - [ ] homogeneity of Variance dan non - autocorrelation
